@@ -1,0 +1,112 @@
+.navbar-brand{
+    font-family: 'Bangers';
+    font-size: 22px;
+}
+#nav-top{
+    margin: 0px;
+    border-radius: 0cm;
+}
+.asortiman{
+    width: 100%;
+    display:grid;
+    grid-template-areas:"m w k";
+    grid-template-columns: auto auto auto;
+}
+.asortiman a{
+    display: none;
+    color: gray;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+#slika1{
+    grid-area: "m";
+    width: 100%;
+    height: 600px;
+    border: 2px solid rgb(160, 160, 160);
+    background-image: url("slike/odjeca-muska.png");
+    background-size:100% 100%;
+}
+#slika1:hover{
+    grid-area: "m";
+    width: 100%;
+    height: 600px;
+    background: black;
+}
+#slika1:hover a{
+    display: block;
+    margin: auto;
+}
+#slika2{
+    grid-area: "w";
+    width: 100%;
+    height: 600px;
+    border: 2px solid rgb(160, 160, 160);
+    background-image: url("slike/obuca-muska.png");
+    background-size: 100% 100%;
+}
+#slika2:hover{
+    grid-area: "w";
+    width: 100%;
+    height: 600px;
+    background: black;
+}
+#slika2:hover a{
+    display: block;
+}
+#slika3{
+    grid-area: "k";
+    width: 100%;
+    height: 600px;
+    border: 2px solid rgb(160, 160, 160);
+    background-image: url("slike/oprema-muska.png");
+    background-size: 100% 100%;
+}
+#slika3:hover{
+    grid-area: "k";
+    width: 100%;
+    height: 600px;
+    background: black;
+}
+#slika3:hover a{
+    display: block;
+}
+#text{
+    text-align: center;
+    font-size: 50px;
+    width: 50%;
+    height: auto;
+    margin:200px auto 0px;
+}
+footer{
+    background-color:rgb(35, 35, 35);
+    text-align: center;
+    padding: 5px;
+    border-top:2px solid black ;
+    width: 100%;
+    bottom: 0px;
+}
+footer img{
+    height: 25px;
+    width: 25px;
+    margin: 0px 20px;
+}
+@media only screen and (max-width: 700px){
+    .asortiman{
+       display: grid;
+           grid-template-areas: "m"
+                                "w"
+                                "k" ;
+           grid-template-columns: 100%;
+       }   
+       #slika1{
+           grid-area: "m";
+       }
+       #slika2{
+           grid-area: "w";
+       }
+       #slika3{
+           grid-area: "k";
+       }
+}

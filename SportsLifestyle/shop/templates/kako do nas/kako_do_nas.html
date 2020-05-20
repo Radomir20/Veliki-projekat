@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sports Lifestyle</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styleK.css' %}">
+    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse" id="nav-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            <a class="navbar-brand" href="{% url 'pocetna' %}">Sports Lifestyle</a>
+        </div>
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li ><a href="{% url 'pocetna' %}"><span class="glyphicon glyphicon-home"> Početna</span></a></li>
+                    <li><a href="{% url 'asortiman' %}"><span class="glyphicon glyphicon-th-list"> Asortiman</span></a></li>
+                    <li class="active"><a href="{% url 'kako' %}"><span class="glyphicon glyphicon-pushpin"> Kako do nas?</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="lokacija">
+        <h1>Sports Lifestyle</h1>
+        <p><b>Kontakt telefon:</b> 066 000 000</p>
+        <p><b>E-mail adresa:</b> sports.lifestyle@gmail.com</p>
+        <p><b>Adresa:</b> Dr. Mladena Stojanovića 2, Banja Luka 78000</p> <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2832.089382159655!2d17.196328615534647!3d44.77898307909891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475e0305e6794e69%3A0xa39833bae9701b0a!2z0J_RgNC40YDQvtC00L3Qvi3QvNCw0YLQtdC80LDRgtC40YfQutC4INGE0LDQutGD0LvRgtC10YI!5e0!3m2!1sbs!2sba!4v1589549039883!5m2!1sbs!2sba" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <footer>
+        <a href="https://www.facebook.com/"><img src="{% static 'css/slike/Fb.png' %}"></a>
+        <a href="https://www.instagram.com/?hl=hr"><img src="{% static 'css/slike/ig.png' %}"></a>
+        <a href="https://twitter.com/?lang=hr"><img src="{% static 'css/slike/tw.png' %}"></a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,38 @@
+.navbar-brand{
+    font-family: 'Bangers';
+    font-size: 22px;
+}
+#nav-top{
+    margin: 0px;
+    border-radius: 0cm;
+}
+.asoriman{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;    
+}
+#tekst{
+    margin: auto 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: gray;
+}
+.asoriman img{
+    margin: 10px;
+    height: 580px;
+    width: 580px;
+    border: 2px solid gray;
+}
+footer{
+    background-color:rgb(35, 35, 35);
+    text-align: center;
+    padding: 5px;
+    border-top:2px solid black ;
+    width: 100%;
+    bottom: 0px;
+}
+footer img{
+    height: 25px;
+    width: 25px;
+    margin: 0px 20px;
+}

@@ -1,0 +1,33 @@
+.navbar-brand{
+    font-family: 'Bangers';
+    font-size: 22px;
+}
+#nav-top{
+    margin: 0px;
+    border-radius: 0cm;
+}
+.lokacija{
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.300);
+}
+h1{
+    margin: 0px;
+    text-align: center;
+    font-family: 'Bangers';
+    font-size: 50px;
+}
+p{
+    font-size: 15px;
+}
+footer{
+    width: 100%;
+    background-color:rgb(35, 35, 35);
+    text-align: center;
+    padding: 5px;
+    border-top:2px solid black ;
+}
+footer img{
+    height: 25px;
+    width: 25px;
+    margin: 0px 20px;
+}

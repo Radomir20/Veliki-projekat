@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sports Lifestyle</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styleZD.css' %}">
+    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse" id="nav-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            <a class="navbar-brand" href="{% url 'pocetna' %}">Sports Lifestyle</a>
+        </div>
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="{% url 'pocetna' %}"><span class="glyphicon glyphicon-home"> Početna</span></a></li>
+                    <li class="active"><a href="{% url 'asortiman' %}"><span class="glyphicon glyphicon-th-list"> Asortiman</span></a></li>
+                    <li><a href="{% url 'kako' %}"><span class="glyphicon glyphicon-pushpin"> Kako do nas?</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="zOdjeca">
+        {% for odjeca in zOdjeca %}
+            <a href="{% url 'zd_odjeca' odjeca.id %}">
+                <div id="roba">
+                    <img src="{{ odjeca.slika.url }}">
+                    <p>{{ odjeca.naziv }}<br>{{ odjeca.cijena }}</p>
+                </div>
+            </a>
+        {% endfor %}
+    </div>
+    <footer>
+        <a href="https://www.facebook.com/"><img src="{% static 'css/slike/Fb.png' %}"></a>
+        <a href="https://www.instagram.com/?hl=hr"><img src="{% static 'css/slike/ig.png' %}"></a>
+        <a href="https://twitter.com/?lang=hr"><img src="{% static 'css/slike/tw.png' %}"></a>
+    </footer>
+</body>
+</html>
